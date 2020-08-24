@@ -1,12 +1,12 @@
 ---
 date: '2018-12-29'
-title: 'Google Keep Clone'
-github: 'https://github.com/bchiang7/google-keep-vue-firebase'
-external: 'https://keep-vue.netlify.com/'
+title: 'React-micro-blog'
+github: 'https://github.com/MohiuddinRabby/react-micro-blog'
+external: 'https://mohiuddinrabby.github.io/react-micro-blog/'
 tech:
-  - Vue
-  - Firebase
+  - React
+  - Bootstrap
 showInProjects: true
 ---
 
-A simple Google Keep clone built with Vue and Firebase.
+A simple front-end react application, acts as a real time blog with like,comment on blog post.

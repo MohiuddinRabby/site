@@ -1,13 +1,13 @@
 ---
 date: '2015-12-20'
-title: 'NU Women in Tech'
-github: 'https://github.com/nuwit/website'
-external: 'https://nuwit.ccs.neu.edu/'
+title: 'H.R.M'
+github: 'https://github.com/MohiuddinRabby/HR_management'
+external: ''
 tech:
-  - Jekyll
-  - Bootstrap
+  - Laravel
+  - php
 company: 'Northeastern'
 showInProjects: true
 ---
 
-Complete overhaul and redesign of NU Women in Tech's club website using Jekyll, built while serving as web chair on the e-board.
+A human resource management with laravel. Did as my final university project.

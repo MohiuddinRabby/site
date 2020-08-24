@@ -1,38 +1,33 @@
 module.exports = {
-  siteTitle: 'Brittany Chiang | Software Engineer',
+  siteTitle: 'Mohiuddin | Front-end Developer',
   siteDescription:
-    'Brittany Chiang is a software engineer based in Boston, MA who specializes in building (and occasionally designing) exceptional websites, applications, and everything in between.',
-  siteKeywords:
-    'Brittany Chiang, Brittany, Chiang, bchiang7, software engineer, front-end engineer, web developer, javascript, northeastern',
+    'Golam Mohiuddin is based in Dhaka, Bangladesh who specializes in building (and occasionally designing) exceptional websites, applications, and everything in between.',
+  siteKeywords: 'Golam Mohiuddin, front-end engineer, web developer, javascript',
   siteUrl: 'https://brittanychiang.com',
   siteLanguage: 'en_US',
   googleAnalyticsID: 'UA-45666519-2',
   googleVerification: 'DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk',
-  name: 'Brittany Chiang',
-  location: 'Boston, MA',
-  email: 'brittany.chiang@gmail.com',
-  github: 'https://github.com/bchiang7',
-  twitterHandle: '@bchiang7',
+  name: 'Golam Mohiuddin',
+  location: 'Dhaka, Bangladesh',
+  email: 'rabby.mohiuddin@gmail.com',
+  github: 'https://github.com/MohiuddinRabby',
   socialMedia: [
     {
       name: 'GitHub',
-      url: 'https://github.com/bchiang7',
+      url: 'https://github.com/MohiuddinRabby',
     },
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/bchiang7',
+      url: 'https://www.linkedin.com/in/mohiuddin-rabby-b49797123/',
     },
-    {
-      name: 'Codepen',
-      url: 'https://codepen.io/bchiang7',
-    },
+
     {
       name: 'Instagram',
-      url: 'https://www.instagram.com/bchiang7',
+      url: 'https://www.instagram.com/xosef',
     },
     {
-      name: 'Twitter',
-      url: 'https://twitter.com/bchiang7',
+      name: 'Stackoverflow',
+      url: 'https://stackoverflow.com/users/7701880/mohiuddin',
     },
   ],
 
@@ -40,10 +35,6 @@ module.exports = {
     {
       name: 'About',
       url: '/#about',
-    },
-    {
-      name: 'Experience',
-      url: '/#jobs',
     },
     {
       name: 'Work',

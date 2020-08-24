@@ -1,12 +1,13 @@
 ---
 date: '2016-01-01'
-title: 'Fontipsums'
-github: 'https://github.com/bchiang7/fontipsums/'
-external: 'http://bchiang7.github.io/fontipsums/'
+title: 'Cart with vanilla js'
+github: 'https://github.com/MohiuddinRabby/shopping-cart-vanillaJS'
+external: 'https://mohiuddinrabby.github.io/shopping-cart-vanillaJS/'
 tech:
   - HTML
-  - SCSS
+  - CSS
+  - JS
 showInProjects: true
 ---
 
-Simple website to display some of my favorite font pairings combined with some fun lorem ipsum variations found on the web.
+Simple shopping cart with vanilla javascript.

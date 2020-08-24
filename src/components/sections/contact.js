@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import sr from '@utils/sr';
-import { srConfig, email } from '@config';
+import { srConfig } from '@config'; //, email
 import styled from 'styled-components';
-import { theme, mixins, media, Section, Heading } from '@styles';
+import { mixins, theme, media, Section, Heading } from '@styles'; //
 const { colors, fontSizes, fonts } = theme;
 
 const StyledContainer = styled(Section)`
@@ -38,14 +38,14 @@ const StyledTitle = styled.h4`
   ${media.desktop`font-size: 50px;`};
   ${media.tablet`font-size: 40px;`};
 `;
-const StyledEmailLink = styled.a`
-  ${mixins.bigButton};
-  margin-top: 50px;
-`;
+// const StyledEmailLink = styled.a`
+//   ${mixins.bigButton};
+//   margin-top: 50px;
+// `;
 
 const Contact = ({ data }) => {
   const { frontmatter, html } = data[0].node;
-  const { title, buttonText } = frontmatter;
+  const { title } = frontmatter; //, buttonText
   const revealContainer = useRef(null);
   useEffect(() => sr.reveal(revealContainer.current, srConfig()), []);
 
@@ -57,9 +57,9 @@ const Contact = ({ data }) => {
 
       <div dangerouslySetInnerHTML={{ __html: html }} />
 
-      <StyledEmailLink href={`mailto:${email}`} target="_blank" rel="nofollow noopener noreferrer">
+      {/* <StyledEmailLink href={`mailto:${email}`} target="_blank" rel="nofollow noopener noreferrer">
         {buttonText}
-      </StyledEmailLink>
+      </StyledEmailLink> */}
     </StyledContainer>
   );
 };
