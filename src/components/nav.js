@@ -295,7 +295,7 @@ class Nav extends Component {
                     <StyledResumeButton
                       href="https://drive.google.com/file/d/1JSuBCd3IWOTa7pR196203cLQfmup7qIK/view?usp=sharing"
                       target="_blank"
-                      rel="nofollow noopener noreferrer">
+                      rel="noopener noreferrer">
                       Resume
                     </StyledResumeButton>
                   </div>
