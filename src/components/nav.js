@@ -293,7 +293,7 @@ class Nav extends Component {
                 <CSSTransition classNames={fadeDownClass} timeout={timeout}>
                   <div style={{ transitionDelay: `${isHome ? navLinks.length * 100 : 0}ms` }}>
                     <StyledResumeButton
-                      href="https://drive.google.com/file/d/1JSuBCd3IWOTa7pR196203cLQfmup7qIK/view?usp=sharing"
+                      href="https://docs.google.com/document/d/1BHS0vkx1sMWC_NkR4MB0Flhzi8V3RKxLbv4qhTFNY54/edit?usp=sharing"
                       target="_blank"
                       rel="noopener noreferrer">
                       Resume
