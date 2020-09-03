@@ -1,13 +1,13 @@
 ---
 date: '2017-12-01'
-title: 'Cart with context-api'
-github: 'https://github.com/MohiuddinRabby/contextAPI-hook-cart'
-external: 'https://mohiuddinrabby.github.io/contextAPI-hook-cart/'
+title: 'Airdnd'
+github: 'https://github.com/MohiuddinRabby/airdnd'
+external: 'https://airdnd-1897f.web.app/'
 tech:
   - React
-  - context-api-hook
+  - Firebase
 company: 'Apple'
 showInProjects: true
 ---
 
-Simple interactive cart. Made with context-api
+Booking hotel rooms like AIRBNB type with auth.
