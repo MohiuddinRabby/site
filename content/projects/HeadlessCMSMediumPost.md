@@ -1,6 +1,6 @@
 ---
 date: '2019-11-12'
-title: 'Red onion restaurant'
+title: 'React Cart'
 github: 'https://github.com/MohiuddinRabby/re-shop'
 external: 'https://reshop.netlify.app/'
 tech:
