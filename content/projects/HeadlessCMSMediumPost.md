@@ -1,11 +1,11 @@
 ---
 date: '2019-11-12'
 title: 'Red onion restaurant'
-github: 'https://github.com/MohiuddinRabby/red-onion-v2-front'
-external: 'https://red-onion-v2.web.app/'
+github: 'https://github.com/MohiuddinRabby/re-shop'
+external: 'https://reshop.netlify.app/'
 tech:
   - React
-  - Express
+  - Hooks
   - Bootstrap
 company: 'Upstatement'
 showInProjects: true
