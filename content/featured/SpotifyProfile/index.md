@@ -1,15 +1,15 @@
 ---
 date: '2'
-title: 'Spotify Profile'
-cover: './demo.png'
-github: 'https://github.com/bchiang7/spotify-profile'
-external: 'https://spotify-profile.herokuapp.com/'
+title: 'Digital Agency'
+cover: './d.png'
+github: 'https://github.com/MohiuddinRabby/digital-agency-landing'
+external: 'https://mohiuddinrabby.github.io/digital-agency-landing/'
 tech:
-  - React
-  - Node.js
-  - Express
-  - Spotify Web API
+  - HTML
+  - CSS
+  - BOOTSTRAP
+  - JQUERY
 showInProjects: true
 ---
 
-A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.
+A static landing page for digital agency

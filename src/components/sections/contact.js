@@ -1,71 +1,68 @@
 import React, { useEffect, useRef } from 'react';
-import PropTypes from 'prop-types';
-import sr from '@utils/sr';
-import { srConfig } from '@config'; //, email
 import styled from 'styled-components';
-import { mixins, theme, media, Section, Heading } from '@styles'; //
-const { colors, fontSizes, fonts } = theme;
+import { srConfig } from '@config';
+import sr from '@utils/sr';
 
-const StyledContainer = styled(Section)`
-  text-align: center;
+const StyledContactSection = styled.section`
   max-width: 600px;
   margin: 0 auto 100px;
-  a {
-    ${mixins.inlineLink};
-  }
-`;
-const StyledHeading = styled(Heading)`
-  display: block;
-  color: ${colors.green};
-  font-size: ${fontSizes.md};
-  font-family: ${fonts.SFMono};
-  font-weight: normal;
-  margin-bottom: 20px;
-  justify-content: center;
-  ${media.desktop`font-size: ${fontSizes.sm};`};
-  &:before {
-    bottom: 0;
-    font-size: ${fontSizes.sm};
-    ${media.desktop`font-size: ${fontSizes.smish};`};
-  }
-  &:after {
-    display: none;
-  }
-`;
-const StyledTitle = styled.h4`
-  margin: 0 0 20px;
-  font-size: 60px;
-  ${media.desktop`font-size: 50px;`};
-  ${media.tablet`font-size: 40px;`};
-`;
-// const StyledEmailLink = styled.a`
-//   ${mixins.bigButton};
-//   margin-top: 50px;
-// `;
+  text-align: center;
 
-const Contact = ({ data }) => {
-  const { frontmatter, html } = data[0].node;
-  const { title } = frontmatter; //, buttonText
+  @media (max-width: 768px) {
+    margin: 0 auto 50px;
+  }
+
+  .overline {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--green);
+    font-family: var(--font-mono);
+    font-size: var(--fz-md);
+    font-weight: 400;
+
+    &:before {
+      bottom: 0;
+      font-size: var(--fz-sm);
+    }
+
+    &:after {
+      display: none;
+    }
+  }
+
+  .title {
+    font-size: clamp(40px, 5vw, 60px);
+  }
+
+  .email-link {
+    ${({ theme }) => theme.mixins.bigButton};
+    margin-top: 50px;
+  }
+`;
+
+const Contact = () => {
   const revealContainer = useRef(null);
   useEffect(() => sr.reveal(revealContainer.current, srConfig()), []);
 
   return (
-    <StyledContainer id="contact" ref={revealContainer}>
-      <StyledHeading>What&apos;s Next?</StyledHeading>
+    <StyledContactSection id="contact" ref={revealContainer}>
+      <h2 className="numbered-heading overline">What’s Next?</h2>
 
-      <StyledTitle>{title}</StyledTitle>
+      <h2 className="title">Get In Touch</h2>
 
-      <div dangerouslySetInnerHTML={{ __html: html }} />
-
-      {/* <StyledEmailLink href={`mailto:${email}`} target="_blank" rel="nofollow noopener noreferrer">
-        {buttonText}
-      </StyledEmailLink> */}
-    </StyledContainer>
+      <p>
+        Currently I'm looking for new opportunities, my inbox is always open. Whether you have a
+        question or just want to say hi, I'll try my best to get back to you!
+      </p>
+      <br />
+      <h3>Email</h3>
+      <h4>rabby.mohiuddin@gmail.com (recommended)</h4>
+      <br />
+      <h3>Social</h3>
+      <h4>instagram.com/xosef (moderately fast response)</h4>
+      <hr />
+    </StyledContactSection>
   );
-};
-
-Contact.propTypes = {
-  data: PropTypes.array.isRequired,
 };
 
 export default Contact;

@@ -1,14 +1,13 @@
 ---
 date: '3'
-title: 'OctoProfile'
-cover: './octoprofile.png'
-github: 'https://github.com/bchiang7/octoprofile'
-external: 'https://octoprofile.now.sh'
+title: 'Re-Shop'
+cover: './ww.png'
+github: 'https://github.com/MohiuddinRabby/re-shop'
+external: 'https://reshop.netlify.app/'
 tech:
-  - Next.js
-  - Chart.js
-  - GitHub API
+  - React (hooks)
+  - Bootstrap
 showInProjects: true
 ---
 
-A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.
+Interactive cart with reducer hooks.

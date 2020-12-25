@@ -1,126 +1,130 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+// , { useState, useEffect }
 import PropTypes from 'prop-types';
-import { FormattedIcon } from '@components/icons';
-import { socialMedia } from '@config';
 import styled from 'styled-components';
-import { theme, mixins, media } from '@styles';
-const { colors, fontSizes, fonts } = theme;
+import { Icon } from '@components/icons';
+import { socialMedia } from '@config';
 
-const StyledContainer = styled.footer`
-  ${mixins.flexCenter};
+const StyledFooter = styled.footer`
+  ${({ theme }) => theme.mixins.flexCenter};
   flex-direction: column;
-  padding: 15px;
-  text-align: center;
   height: auto;
   min-height: 70px;
+  padding: 15px;
+  text-align: center;
 `;
-const StyledSocial = styled.div`
-  color: ${colors.lightSlate};
-  width: 100%;
-  max-width: 270px;
-  margin: 0 auto 10px;
+
+const StyledSocialLinks = styled.div`
   display: none;
-  ${media.tablet`display: block;`};
-`;
-const StyledSocialList = styled.ul`
-  ${mixins.flexBetween};
-  padding: 0;
-  margin: 0;
-  list-style: none;
-`;
-const StyledSocialLink = styled.a`
-  padding: 10px;
-  svg {
-    width: 20px;
-    height: 20px;
-  }
-`;
-const StyledMetadata = styled.div`
-  font-family: ${fonts.SFMono};
-  font-size: ${fontSizes.xs};
-  line-height: 1;
-`;
-const StyledGitHubLink = styled.a`
-  color: ${colors.lightSlate};
-  padding: 10px;
-`;
-const StyledGitHubInfo = styled.div`
-  margin-top: 10px;
 
-  & > span {
-    display: inline-flex;
-    align-items: center;
-    margin: 0 7px;
+  @media (max-width: 768px) {
+    display: block;
+    width: 100%;
+    max-width: 270px;
+    margin: 0 auto 10px;
+    color: var(--light-slate);
   }
-  svg {
-    display: inline-block;
-    height: 15px;
-    width: auto;
-    margin-right: 5px;
-  }
-`;
 
-const Footer = () => {
-  const [githubInfo, setGitHubInfo] = useState({
-    stars: null,
-    forks: null,
-  });
+  ul {
+    ${({ theme }) => theme.mixins.flexBetween};
+    padding: 0;
+    margin: 0;
+    list-style: none;
 
-  useEffect(() => {
-    if (process.env.NODE_ENV !== 'production') {
-      return;
+    a {
+      padding: 10px;
+      svg {
+        width: 20px;
+        height: 20px;
+      }
     }
-    fetch('https://api.github.com/repos/MohiuddinRabby/coffee-shop-landing-page')
-      .then(response => response.json())
-      .then(json => {
-        const { stargazers_count, forks_count } = json;
-        setGitHubInfo({
-          stars: stargazers_count,
-          forks: forks_count,
-        });
-      })
-      .catch(e => console.error(e));
-  }, []);
+  }
+`;
+
+const StyledCredit = styled.div`
+  color: var(--light-slate);
+  font-family: var(--font-mono);
+  font-size: var(--fz-xxs);
+  line-height: 1;
+
+  a {
+    padding: 10px;
+  }
+
+  .github-stats {
+    margin-top: 10px;
+
+    & > span {
+      display: inline-flex;
+      align-items: center;
+      margin: 0 7px;
+    }
+    svg {
+      display: inline-block;
+      margin-right: 5px;
+      width: 14px;
+      height: 14px;
+    }
+  }
+`;
+
+// eslint-disable-next-line arrow-body-style
+const Footer = () => {
+  // const [githubInfo, setGitHubInfo] = useState({
+  //   stars: null,
+  //   forks: null,
+  // });
+
+  // useEffect(() => {
+  //   if (process.env.NODE_ENV !== 'production') {
+  //     return;
+  //   }
+  //   fetch('https://api.github.com/repos/bchiang7/v4')
+  //     .then(response => response.json())
+  //     .then(json => {
+  //       const { stargazers_count, forks_count } = json;
+  //       setGitHubInfo({
+  //         stars: stargazers_count,
+  //         forks: forks_count,
+  //       });
+  //     })
+  //     .catch(e => console.error(e));
+  // }, []);
 
   return (
-    <StyledContainer>
-      <StyledSocial>
-        <StyledSocialList>
+    <StyledFooter>
+      <StyledSocialLinks>
+        <ul>
           {socialMedia &&
             socialMedia.map(({ name, url }, i) => (
               <li key={i}>
-                <StyledSocialLink
-                  href={url}
-                  target="_blank"
-                  rel="nofollow noopener noreferrer"
-                  aria-label={name}>
-                  <FormattedIcon name={name} />
-                </StyledSocialLink>
+                <a href={url} aria-label={name} target="_blank" rel="noreferrer noopener">
+                  <Icon name={name} />
+                </a>
               </li>
             ))}
-        </StyledSocialList>
-      </StyledSocial>
-      <StyledMetadata tabindex="-1">
-        <StyledGitHubLink
-          href="https://github.com/MohiuddinRabby"
-          target="_blank"
-          rel="nofollow noopener noreferrer">
-          <div>Golam Mohiuddin 2020</div>
-          {githubInfo.stars && githubInfo.forks && (
-            <StyledGitHubInfo>
+        </ul>
+      </StyledSocialLinks>
+
+      <StyledCredit tabindex="-1">
+        <a href="https://github.com/bchiang7/v4" target="_blank" rel="noreferrer noopener">
+          <div>Design &copy; Brittany Chiang</div>
+
+          {/* {githubInfo.stars && githubInfo.forks && (
+            <div className="github-stats">
               <span>
-                <FormattedIcon name="Star" />
+                <Icon name="Star" />
                 <span>{githubInfo.stars.toLocaleString()}</span>
               </span>
               <span>
-                <FormattedIcon name="Fork" />
+                <Icon name="Fork" />
                 <span>{githubInfo.forks.toLocaleString()}</span>
               </span>
-            </StyledGitHubInfo>
-          )}
-        </StyledGitHubLink>
-      </StyledMetadata>
-    </StyledContainer>
+            </div>
+          )} */}
+        </a>
+      </StyledCredit>
+    </StyledFooter>
   );
 };
 
