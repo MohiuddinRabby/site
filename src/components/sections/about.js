@@ -132,7 +132,14 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['HTML & CSS', 'Bootstrap', 'JavaScript (ES6)', 'React', 'Express.js (basics)'];
+  const skills = [
+    'HTML & CSS',
+    'Bootstrap',
+    'JavaScript (ES6+)',
+    'React',
+    'Express.js (basics)',
+    'Material-UI',
+  ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -155,7 +162,7 @@ const About = () => {
             <p>
               I’ve completed my bachelors degree in Software Engineering. I am very passionate about
               what I do. Outside of programming I love to do Photography and have a quite interest
-              in Video editing (not started yet). Some of my Photography is available on{' '}
+              in Video editing. Some of my Photography is available on &nbsp;
               <a href="https://www.pexels.com/@xosef-346551" target="_blank" rel="noreferrer">
                 Pexels
               </a>{' '}

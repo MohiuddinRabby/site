@@ -52,8 +52,8 @@ const Hero = () => {
   const four = (
     <p>
       I'm a front-end developer based in Dhaka, Bangladesh specializing in building websites,
-      applications, and everything in between. My primary interest is with React. And I love to do
-      things mostly with JavaScript, React, Bootstrap.
+      applications, and everything in between. My primary interest is with Front-end things. And I
+      love to do things mostly with JavaScript, React.
     </p>
   );
   const items = [one, two, three, four];
