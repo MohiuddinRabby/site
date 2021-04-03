@@ -3,7 +3,7 @@ date: '2020-10-25'
 title: 'Front-end Developer-Intern'
 company: 'Akij IT'
 location: 'Akij House,Dhaka 1208'
-range: 'October 2020 - Present'
+range: 'October 2020 - January 2021'
 url: 'http://www.akijinfotech.com/'
 ---
 
