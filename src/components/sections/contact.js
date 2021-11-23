@@ -56,10 +56,10 @@ const Contact = () => {
       </p>
       <br />
       <h3>Email</h3>
-      <h4>rabby.mohiuddin@gmail.com (recommended)</h4>
+      <h4>golam35-1523@diu.edu.bd (recommended)</h4>
       <br />
       <h3>Social</h3>
-      <h4>instagram.com/xosef (moderately fast response)</h4>
+      <h4>instagram.com/xosef</h4>
       <hr />
     </StyledContactSection>
   );
