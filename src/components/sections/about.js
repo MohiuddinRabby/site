@@ -163,7 +163,10 @@ const About = () => {
               I’ve completed my bachelors degree in Software Engineering. I am very passionate about
               what I do. Outside of programming I love to do Photography and have a quite interest
               in Video editing. Some of my Photography is available on &nbsp;
-              <a href="https://www.pexels.com/@xosef-346551" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.pexels.com/@xosef-346551"
+                target="_blank"
+                rel=" noopener noreferrer">
                 Pexels
               </a>{' '}
             </p>

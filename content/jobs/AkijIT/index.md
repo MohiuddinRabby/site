@@ -1,6 +1,6 @@
 ---
 date: '2020-10-25'
-title: 'Front-end Developer-Intern'
+title: 'Software Developer-Intern'
 company: 'Ibos(Concern of Akij Group)'
 location: 'Akij House,Dhaka 1208'
 range: 'October 2020 - January 2021'

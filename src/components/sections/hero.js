@@ -51,7 +51,7 @@ const Hero = () => {
   const three = <h3 className="big-heading">I build things for the web.</h3>;
   const four = (
     <p>
-      I'm a front-end developer based in Dhaka, Bangladesh specializing in building websites,
+      I'm a web developer based in Dhaka, Bangladesh specializing in building websites,
       applications, and everything in between. My primary interest is with Front-end things. And I
       love to do things mostly with JavaScript, React.
     </p>
