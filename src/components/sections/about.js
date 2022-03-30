@@ -167,8 +167,15 @@ const About = () => {
                 href="https://www.pexels.com/@xosef-346551"
                 target="_blank"
                 rel=" noopener noreferrer">
-                Pexels
-              </a>{' '}
+                Pexels &nbsp;
+              </a>
+              and videos on &nbsp;
+              <a
+                href="https://www.youtube.com/channel/UC76SyFaEC6jjVK2D0NRbugA"
+                target="_blank"
+                rel=" noopener noreferrer">
+                Youtube
+              </a>
             </p>
 
             <p>Here are a few technologies I've been working with recently:</p>
